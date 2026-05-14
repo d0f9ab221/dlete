@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader - Dlete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-download"></i>
+                <span>Dlete</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Download YouTube Thumbnails</h1>
+                    <p>Extract high-quality thumbnails from any YouTube video in seconds. Fast, free, and no registration required.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://image.pollinations.ai/prompt/Modern%20minimalist%20youtube%20thumbnail%20downloader%20interface%20with%20clean%20design%2C%20blue%20and%20white%20color%20scheme%2C%20responsive%20layout" alt="Thumbnail Downloader Interface">
+                </div>
+            </section>
+
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="input-container">
+                    <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL here..." class="url-input">
+                    <button id="downloadBtn" class="download-btn">
+                        <i class="fas fa-magic"></i> Extract Thumbnails
+                    </button>
+                </div>
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2>Available Thumbnails</h2>
+                    <div class="quality-indicator">
+                        <span class="badge high-quality">High Quality (HQ)</span>
+                        <span class="badge standard-quality">Standard Definition (SD)</span>
+                        <span class="badge max-quality">Maximum Resolution</span>
+                    </div>
+                </div>
+
+                <div class="thumbnails-grid">
+                    <!-- High Quality Thumbnail -->
+                    <div class="thumbnail-card">
+                        <div class="thumbnail-preview">
+                            <img id="hqThumbnail" src="" alt="High Quality Thumbnail">
+                            <div class="overlay">
+                                <span class="resolution">1280×720</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail-actions">
+                            <a id="hqDownload" href="#" download class="download-link">
+                                <i class="fas fa-download"></i> Download HQ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Standard Definition Thumbnail -->
+                    <div class="thumbnail-card">
+                        <div class="thumbnail-preview">
+                            <img id="sdThumbnail" src="" alt="Standard Definition Thumbnail">
+                            <div class="overlay">
+                                <span class="resolution">640×480</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail-actions">
+                            <a id="sdDownload" href="#" download class="download-link">
+                                <i class="fas fa-download"></i> Download SD
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Maximum Resolution Thumbnail -->
+                    <div class="thumbnail-card">
+                        <div class="thumbnail-preview">
+                            <img id="maxThumbnail" src="" alt="Maximum Resolution Thumbnail">
+                            <div class="overlay">
+                                <span class="resolution">1920×1080</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail-actions">
+                            <a id="maxDownload" href="#" download class="download-link">
+                                <i class="fas fa-download"></i> Download Max
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section class="info-section">
+                <div class="info-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Extraction</h3>
+                    <p>Get thumbnails instantly without waiting</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Preview Before Download</h3>
+                    <p>See all available thumbnail qualities</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure & Private</h3>
+                    <p>No data collection, no tracking</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-download"></i>
+                    <span>Dlete</span>
+                </div>
+                <p class="footer-text">&copy; 2024 Dlete. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
